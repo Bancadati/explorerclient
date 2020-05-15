@@ -4,7 +4,7 @@ This repo contains a simple and limited implementation of a ThreeFold explorer c
 [https://explorer.grid.tf](https://explorer.grid.tf)
 
 
-This client only implements endpoints needed for the purposes of Bancadati and is therefor very limited functionality.
+This client only implements endpoints needed for the purposes of Bancadati and is therefor very limited in functionality.
 
 ## Usage
 
