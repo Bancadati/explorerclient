@@ -14,6 +14,11 @@ import (
 	"github.com/pkg/errors"
 )
 
+const (
+	// DefaultBaseURL represents the default API URL for the Threefold Explorer
+	DefaultBaseURL = "https://explorer.grid.tf/explorer/"
+)
+
 var (
 	successCodes = []int{
 		http.StatusOK,
