@@ -48,7 +48,7 @@ type Client struct {
 }
 
 func (c *Client) geturl(p ...string) string {
-	b := c.baseURL
+	b := *c.baseURL
 	b.Path = filepath.Join(b.Path, filepath.Join(p...))
 
 	return b.String()
