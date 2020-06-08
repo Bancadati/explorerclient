@@ -1,6 +1,7 @@
 package explorerclient
 
 import (
+	"fmt"
 	"net/url"
 )
 
@@ -32,6 +33,9 @@ func (p *Pager) apply(v url.Values) {
 	if p.s < 1 {
 		p.s = defaultSize
 	}
+
+	v.Set("page", fmt.Sprint(p.p))
+	v.Set("size", fmt.Sprint(p.s))
 }
 
 // Page returns a pager
