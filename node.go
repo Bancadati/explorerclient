@@ -8,6 +8,7 @@ import (
 // Node represents a node
 type Node struct {
 	ID                int64          `json:"id"`
+	Hostname          string         `json:"hostname"`
 	NodeID            string         `json:"node_id"`
 	NodeIDV1          string         `json:"node_id_v1"`
 	FarmID            int64          `json:"farm_id"`
