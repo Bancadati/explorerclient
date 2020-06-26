@@ -213,10 +213,10 @@ type Proof struct {
 
 // ResourceAmount contains an amount for each resource
 type ResourceAmount struct {
-	Cru uint64  `json:"cru"`
-	Mru float64 `json:"mru"`
-	Hru float64 `json:"hru"`
-	Sru float64 `json:"sru"`
+	CRU uint64  `json:"cru"`
+	MRU float64 `json:"mru"`
+	HRU float64 `json:"hru"`
+	SRU float64 `json:"sru"`
 }
 
 // Location represents a physical location
