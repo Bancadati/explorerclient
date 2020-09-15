@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"path"
 	"path/filepath"
 
 	"github.com/pkg/errors"
@@ -49,7 +50,7 @@ type Client struct {
 
 func (c *Client) geturl(p ...string) string {
 	b := *c.baseURL
-	b.Path = filepath.Join(b.Path, filepath.Join(p...))
+	b.Path = path.Join(b.Path, filepath.Join(p...))
 
 	return b.String()
 }
